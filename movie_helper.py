@@ -19,7 +19,7 @@ class Movie():
     def __repr__(self):
         return '{}.{}("{}","{}","{}","{}")'.format(
             self.__module__,
-            "Movie",
+            self.__class__.__name__,
             self.title,
             self.mov_story,
             self.trailer_youtube_url,
