@@ -4,7 +4,7 @@ Fresh Tomatoes! is a simple application that creates a static webpage showing si
 
 ### Pre-requisites
 
-To generate the webpage, you must download the following files from this repo:
+To generate the webpage, you must download the following modules from this repo:
 
     fresh_tomatoes.py
     movie_helper.py
