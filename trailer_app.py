@@ -1,10 +1,13 @@
 import movie_helper
 import fresh_tomatoes
 
+"""
+    trailer_app.py is the 'Main' module for this application.
+    It is used to instantiate objects of type 'Movie' and then creates
+    a static webpage that displays the movies that are created. 
+"""
 
-# Create Movie objects
-
-
+# Instantiate all the movies to be displayed on the webpage
 inception_movie = movie_helper.Movie('Inception',
                                      'Team journeys into dreams '
                                      'to solve mysteries',
@@ -68,13 +71,12 @@ the_matrix_movie = movie_helper.Movie('The Matrix',
                                       'dlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY'
                                       '1000_CR0,0,665,1000_AL_.jpg')
 
-# Create List including all Movie objects created above
 
-
+# Create a List including all Movie objects created above.
 movie_list = [inception_movie, big_lebowski_movie, blade_movie,
               the_matrix_movie, american_pie_movie, dogma_movie]
 
+
 # Pass List with all Movie objects into the function that
 # creates and opens the movies page.
-
 fresh_tomatoes.open_movies_page(movie_list)
