@@ -20,7 +20,8 @@ class Movie(object):
             request URL for the append_to_response feature of the API.
         title: String of the movie title.
         eflag: Boolean flag used to show if there was an error connecting to
-            the API for this instance. Set to true on exceptions raised by "request" GET calls.
+            the API for this instance. Set to true on exceptions raised
+            by "request" GET calls.
 
     """
 
@@ -48,7 +49,9 @@ class Movie(object):
         """
         Dynamically creates an API request URL
 
-        Method is used to minimize repetitive code since the URL format for the "movie" section of the API is standardized. This also allows for the append_to_url feature to easily be used.
+        Method is used to minimize repetitive code since the URL format
+        for the "movie" section of the API is standardized. This also allows
+        for the append_to_url feature to easily be used.
 
         Args:
             self: Self-explanatory
@@ -86,10 +89,19 @@ class Movie(object):
         Gets the full path to a poster image for the
         movie.
 
-        The API implementation for TMDb does not return the full URL to access the images associated with the movie in the response to a call to get the primary data of a movie. It will only return a partial path to the image; an ID of sorts. To get the information to create a full URL to the image, a call to the API to get configuration data is necessary. See "https://developers.themoviedb.org/3/configuration/get-api-configuration" for more information on the data necessary to construct a full image URL.
+        The API implementation for TMDb does not return the
+        full URL to access the images associated with the movie
+        in the response to a call to get the primary data of a movie.
+        It will only return a partial path to the image; an ID of sorts.
+        To get the information to create a full URL to the image, a call
+        to the API to get configuration data is necessary. See
+        "https://developers.themoviedb.org/3/configuration/
+        get-api-configuration" for more information on the data
+        necessary to construct a full image URL.
 
         Args:
-            Only takes self, all functionality is based off of instance attributes or methods.
+            Only takes self, all functionality is based off
+            of instance attributes or methods.
 
         Raises: None
 
@@ -114,7 +126,9 @@ class Movie(object):
             self.poster_path = None
 
         except requests.exceptions.HTTPError as he:
-            print('{}...failed to get image URL for {}'.format(he, self.title))
+            print('{}...failed to get image URL for '
+                  '{}'.format(he, self.title))
+
             self.eflag = True
             self.poster_path = None
 
@@ -139,17 +153,21 @@ class Movie(object):
 
     def _get_movie_data(self):
         """
-        Pulls primary data for the movie from the API. This data is then parsed and then some values are used to populate the necessary instance attributes.
+        Pulls primary data for the movie from the API. This data
+        is then parsed and then some values are used to populate
+        the necessary instance attributes.
 
         Args:
-            Only takes self, all functionality is based off of instance attributes or methods.
+            Only takes self, all functionality is based off
+            of instance attributes or methods.
+
         Raises:
             requests.exceptions.Timeout: "requests" exception for network
                 connection timeouts.
             requests.exceptions.HTTPError: "requests" exception for HTTP
                 status codes indicating error.
             requests.exceptions.ConnectionError: "requests" exception for
-                non-timeout network connection errors
+                non - timeout network connection errors
             See "requests" documentation for more informaton.
 
         Returns: Nothing, sets instance variables based off of primary
@@ -201,6 +219,7 @@ class Movie(object):
             self._get_image_url()
 
     def build(self):
-        """Calls the necessary private function to fill the instance attributes of the movie object"""
+        """Calls the necessary private function to fill
+        the instance attributes of the movie object"""
 
         self._get_movie_data()
