@@ -2,7 +2,7 @@ from movie_helper2 import Movie
 from fresh_tomatoes2 import open_movies_page
 
 # Used for auth in API calls
-api_key = ''
+api_key = input('Please input API Key for auth: ')
 
 
 # Assigning movie IDs to more readable variables
