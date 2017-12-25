@@ -26,8 +26,7 @@ The `fresh_tomatoes(2).py` module is used to supply the style and structure of t
 If you plan on using the API version, you must create an account at https://www.themoviedb.org and request an API Key that is used for authentication of the requests. The API key will need to be added to the `trailer_app2.py` module.
 
 ### Usage
-To create and open the webpage, simply run the `trailer_app.py` module. It should dynamically create a new HTML file in the same directory and attempt to open it in a new browser tab.
+To create and open the webpage, simply run the `trailer_app(2).py` module. It should dynamically create a new HTML file in the same directory and attempt to open it in a new browser tab.
 
 ### Acknowledgements
-[logo]: https://www.themoviedb.org/assets/static_cache/fd6543b66d4fd736a628af57a75bbfda/images/v4/logos/293x302-powered-by-square-blue.png
 This product uses the TMDb API but is not endorsed or certified by TMDb.
