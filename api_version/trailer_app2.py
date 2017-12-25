@@ -35,7 +35,7 @@ american_pie_movie.build()
 inception_movie = Movie(inception_id, api_key, append_vals=appends)
 inception_movie.build()
 
-# List of movie objects to pass to the webpage building function
+# Tuple of movie objects to pass to the webpage building function
 movies = (blade_movie, dogma_movie, lebowski_movie, the_matrix_movie,
           american_pie_movie, inception_movie)
 
