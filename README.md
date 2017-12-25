@@ -29,5 +29,5 @@ If you plan on using the API version, you must create an account at https://www.
 To create and open the webpage, simply run the `trailer_app.py` module. It should dynamically create a new HTML file in the same directory and attempt to open it in a new browser tab.
 
 ### Acknowledgements
-![alt text]https://www.themoviedb.org/static_cache/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg)
+[logo]: https://www.themoviedb.org/static_cache/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg
 This product uses the TMDb API but is not endorsed or certified by TMDb.
