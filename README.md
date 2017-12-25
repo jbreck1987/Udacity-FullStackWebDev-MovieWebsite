@@ -12,9 +12,9 @@ This small applicaton is a project to help me learn basic OOP and also how to co
     
 For the API version, you must download the following modules from this repo:
 
-    /api-version/fresh_tomatoes2.py
-    /api-version/movie_helper2.py
-    /api-version/trailer_app2.py
+    /api_version/fresh_tomatoes2.py
+    /api_version/movie_helper2.py
+    /api_version/trailer_app2.py
 
 The API version also requires the Python "requests" module.
     
